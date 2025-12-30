@@ -19,30 +19,40 @@ import {
 const PROJECTS = [
   {
     id: 1,
-    title: "Nebula Dashboard",
-    description: "A high-performance analytics dashboard with real-time data visualization using WebSockets.",
-    tags: ["React", "D3.js", "Node.js"],
-    category: "Web",
+    title: "Nutrimetas",
+    description: "Application designed for professionals in nutrition and their customers to have an easy way to follow up their progress and motivate them to keep a healthy life.",
+    tags: ["React Native", "TypeScript", "Firebase"],
+    category: "Mobile",
     color: "from-purple-500 to-indigo-600",
     link: "#",
     repo: "#"
   },
   {
     id: 2,
-    title: "EcoTrack Mobile",
-    description: "Cross-platform mobile application for tracking personal carbon footprints and recycling habits.",
-    tags: ["React Native", "Firebase", "Maps API"],
-    category: "Mobile",
+    title: "FaPi Bookings",
+    description: "As a SCRUM master, I assumed responsibility for leading meetings with stakeholders, gathering requirements, and going through the entire development lifecycle.",
+    tags: [".NET", "C#", "SQL"],
+    category: "Web",
     color: "from-emerald-400 to-teal-600",
     link: "#",
     repo: "#"
   },
   {
     id: 3,
-    title: "Sentience AI",
-    description: "Natural Language Processing tool that summarizes legal documents into plain English.",
-    tags: ["Python", "OpenAI API", "Next.js"],
-    category: "AI",
+    title: "Sticky Notes",
+    description: "Application in which you can have your sticky notes saved and updated with a rich text format. Implements a login system with authentication via tokens.",
+    tags: ["Angular", "TypeScript", "Node.js", "MongoDB"],
+    category: "Web",
+    color: "from-orange-400 to-pink-600",
+    link: "#",
+    repo: "#"
+  },
+  {
+    id: 4,
+    title: "QueMaster",
+    description: "Application in which you can have your sticky notes saved and updated with a rich text format. Implements a login system with authentication via tokens.",
+    tags: ["Angular", "TypeScript", "Node.js", "MongoDB"],
+    category: "Web",
     color: "from-orange-400 to-pink-600",
     link: "#",
     repo: "#"
@@ -52,33 +62,28 @@ const PROJECTS = [
 // --- DATOS: EXPERIENCIA ---
 const EXPERIENCE = [
   {
-    company: "TechNova Inc.",
-    role: "Senior Full Stack Developer",
-    period: "2022 - Present",
-    description: "Leading a team of 5 developers in building scalable microservices. Improved system latency by 40%."
+    company: "Rovuk Inc",
+    role: "QA Engineer",
+    period: "2021 - 2024",
+    description: "Between my responsibilities I had to make sure the app we were working on run smoothly and without issues, solving tickets, managing staff and delivering on time."
   },
   {
-    company: "Creative Solutions",
-    role: "Frontend Developer",
-    period: "2020 - 2022",
-    description: "Developed interactive UIs for e-commerce clients using React and Tailwind. Implemented CI/CD pipelines."
+    company: "Ridaro Technology",
+    role: "Mobile Software Developer",
+    period: "2024 - 2025",
+    description: "I worked delivering features on time, solving tickets everything based on Flutter"
   },
-  {
-    company: "StartUp Garage",
-    role: "Junior Web Developer",
-    period: "2018 - 2020",
-    description: "Collaborated on the launch of 3 MVP products. Maintained legacy codebases and integrated payment gateways."
-  }
 ];
 
 // --- DATOS: SKILLS ---
 const SKILLS = {
-  Frontend: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-  Backend: ["Node.js", "Python", "PostgreSQL", "GraphQL", "Redis"],
+  Frontend: ["React", "Angular", "Next.js", "TypeScript", "Tailwind CSS", ".NET"],
+  Backend: ["Node.js", "Python", "SQL", "NoSQL", "REST APIs"],
+  Mobile: ["React Native", "Flutter"],
   Tools: ["Docker", "AWS", "Git", "Figma", "Linux"]
 };
 
-const CATEGORIES = ["All", "Web", "Mobile", "AI", "Tools"];
+const CATEGORIES = ["All", "Web", "Mobile"];
 
 // --- COMPONENTE DE ANIMACIÓN AL SCROLL ---
 const RevealOnScroll: React.FC<{ children?: React.ReactNode }> = ({ children }) => {
@@ -127,7 +132,7 @@ export default function App() {
             <div className="w-8 h-8 bg-indigo-500 rounded-lg flex items-center justify-center">
               <Code2 size={20} className="text-white" />
             </div>
-            <span>DevPortfolio</span>
+            <span>Fabian Dev</span>
           </div>
           <div className="hidden md:flex gap-8 text-sm font-medium text-slate-400">
             <a href="#about" className="hover:text-white transition-colors">About</a>
@@ -190,7 +195,7 @@ export default function App() {
                 <div className="relative w-32 h-32 mb-8 group">
                   <div className="absolute inset-0 bg-linear-to-tr from-indigo-500 to-purple-500 rounded-full blur-lg opacity-50 group-hover:opacity-80 transition-opacity duration-500"></div>
                   <img 
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80" 
+                    src="/profile_pic.png" 
                     alt="Profile" 
                     className="relative w-full h-full object-cover rounded-full border-4 border-slate-950 shadow-2xl"
                   />
@@ -201,10 +206,15 @@ export default function App() {
                 </h2>
                 <div className="w-20 h-1.5 bg-indigo-500 mb-8 rounded-full"></div>
                 <p className="text-slate-400 leading-relaxed text-lg mb-6">
-                  With over 5 years of experience in software development, I have a passion for building software that solves real-world problems. My journey began with a simple curiosity about how websites worked, which evolved into a career in full-stack engineering.
+                  With over 3 years of experience in QA Engineering and plus 1 year of software 
+                  development, I have a passion for building software that solves real-world 
+                  problems. My journey began with a simple curiosity about how websites and 
+                  applications worked, then it evolved into a career and bachelor&apos;s degree 
+                  in computer science.
                 </p>
                 <p className="text-slate-400 leading-relaxed text-lg">
-                  When I&apos;m not coding, you can find me contributing to open-source projects, writing tech blogs, or exploring the latest advancements in AI and machine learning.
+                  When I&apos;m not coding, you can find me exploring the latest 
+                  advancements in new technologies and machine learning.
                 </p>
               </div>
               
